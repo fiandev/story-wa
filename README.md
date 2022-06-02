@@ -7,8 +7,8 @@ sebuah program yang berfungsi mengubah isi story kontak wa kamu menjadi yang kam
 * pindahkan beberapa foto yang ingin dijadikan hasil ke folder <b>fileToChange</b>
 * ketik <b>npm run change</b> untuk mengubah story
 * ketik <b>npm run backup</b> untuk mengbackup story
+* tambahkan <b>--11</b> dibelakang <b>npm run change/backup</b> jika menggunakan android v11
 * coba lihat apakah hasilnya berhasil
-
 ## note
 1. story yang di ubah hanya story yang sudah kamu lihat sebelumnya.
 2. jangan menjalankan <b>npm run change</b> 2x secara <b>berurutan!</b>

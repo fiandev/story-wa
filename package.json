@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "change": "node index.js change",
-    "backup": "node index.js backup"
+    "backup": "node index.js backup",
+    "change --11": "node index.js change --11",
+    "backup --11": "node index.js backup --11"
   },
   "author": "fiandev",
   "dependencies": {
