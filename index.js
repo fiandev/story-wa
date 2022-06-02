@@ -23,7 +23,7 @@ filesStory.forEach(file => {
     // copy and move file di filesToChange
     fs.copyFile(`${pathFileToChange}/${fileToChange}`, `${pathStoryWa}/${filename}`, (err) => {
       if (err) throw err;
-      console.log(`success copy ${fileToChange} to ${StoryWa}\n success move ${filename} to ${pathFileStory}`);
+      console.log(`success copy ${fileToChange} to ${pathStoryWa}\n success move ${filename} to ${pathFileStory}`);
     });
   }
 })
