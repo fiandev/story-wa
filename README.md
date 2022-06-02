@@ -8,4 +8,4 @@ sebuah program yang berfungsi mengubah isi story kontak wa kamu menjadi yang kam
 * coba lihat apakah hasilnya berhasil
 
 ## note
-story yang di ubah hanya stroy yang sudah kamu lihat sebelumnya.
+story yang di ubah hanya story yang sudah kamu lihat sebelumnya.
