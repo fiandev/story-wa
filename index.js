@@ -1,13 +1,17 @@
 const fs = require("fs")
+const path = require('path');
 
 const pathFileStory = "./StoryWa"
 const pathFileToChange = "./fileToChange"
 const pathStoryWa = "../WhatsApp/Media/.Statuses/"
-const path = require('path');
 const filesToChange = fs.readdirSync(pathFileToChange, { withFileTypes: true });
 const filesStory = fs.readdirSync(pathStoryWa, { withFileTypes: true });
 function randomFileTochange(){
-  return filesToChange[Math.floor(Math.random() * filesToChange.length)].name
+  let file = filesToChange[Math.floor(Math.random() * filesToChange.length)].name
+  if(path.extname(file) != ".gitignore"){
+    return file
+  }
+  throw "file in /filesToChange not exist!"
 }
 filesStory.forEach(file => {
   let filename = file.name
