@@ -1,3 +1,5 @@
 /node_modules
+StoryWa/*
+fileToChange/*
 !StoryWa/.gitkeep
 !fileToChange/.gitkeep
