@@ -21,13 +21,9 @@ filesStory.forEach(file => {
     let newPath = `${pathFileStory}/${filename}`
     let fileToChange = randomFileTochange()
     // move file di StoryWa
-    fs.rename(oldPath, newPath, (err) => {
-      if (err) throw err
-    })
+    fs.renameSync(oldPath, newPath)
     // copy and move file di filesToChange
-    fs.copyFile(`${pathFileToChange}/${fileToChange}`, `${pathStoryWa}/${filename}`, (err) => {
-      if (err) throw err;
-      console.log(`success copy ${fileToChange} to ${pathStoryWa}\n success move ${filename} to ${pathFileStory}`);
-    });
+    fs.copyFileSync(`${pathFileToChange}/${fileToChange}`, `${pathStoryWa}/${filename}`)
+    console.log(`success copy ${fileToChange} to ${pathStoryWa}\n success move ${filename} to ${pathFileStory}`);
   }
 })
