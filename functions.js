@@ -1,4 +1,5 @@
 const path = require('path');
+const cli = process.argv
 
 const randomFileTochange = (filesToChange) => {
   let file = filesToChange[Math.floor(Math.random() * filesToChange.length)].name
@@ -8,4 +9,7 @@ const randomFileTochange = (filesToChange) => {
   throw "file in /filesToChange not exist!"
 }
 
-module.exports = { randomFileTochange }
+const argsExist = (args) => {
+  return cli.includes("change", 0)
+}
+module.exports = { randomFileTochange, argsExist }

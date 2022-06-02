@@ -1,9 +1,9 @@
-const cli = process.argv
+const { argsExist } = require("./functions")
 const { changeStory, backupStory } = require("./controllers");
 //console.log(process.argv);
-if (cli.includes("change", 0)) {
+if (argsExist("change")) {
   changeStory()
-} else if(cli.includes("backup", 0)) {
+} else if(argsExist("backup")) {
   backupStory()
 } else {
   console.log("arguments cli not exist!");
